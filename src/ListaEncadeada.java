@@ -118,24 +118,19 @@ public class ListaEncadeada<T> {
         No<T> anterior = null; //nó anterior começa como null pq o primeiro nó não tem anterior
         while(aux != null){//percorre a lista até o final
             if(aux.getValor().equals(valor)){
-                if(aux == this.first){
+                if(aux == this.first){ //se for o primeiro elemento, tem que atualizar o first
                     this.first = this.first.getProx();
-                    if(aux == this.last)
-                        this.last = null;
-                }
-                if(aux == this.first){
-                    this.first = this.first.getProx();
-                    if(aux == this.last)
+                    if(aux == this.last) //se for o único elemento, atualiza o last também
                         this.last = null;
                 } else {
-                    anterior.setProx(aux.getProx());
+                    anterior.setProx(aux.getProx()); //o 'prox' do nó anterior passa a apontar pro 'prox' do nó que vai ser removido, "pulando" o nó que vai ser removido
                     if(aux == this.last)
                         this.last = anterior;
                 }
-                this.quantidade--;
+                this.quantidade--; //removeu um elemento, então decrementa a quantidade
                 return aux.getValor();
             }
-            anterior = aux;
+            anterior = aux; //atualiza o anterior pro nó atual pra poder avançar
             aux = aux.getProx();
         }
         return null; //se percorreu a lista toda e não encontrou o elemento, o elemento não está e retorna null
