@@ -55,7 +55,7 @@ Além disso, o trabalho inclui uma comparação entre `ArrayList` e `LinkedList`
 
 ## 🧪 Testes Empíricos
 
-Para validar a análise teórica, foram feitos testes de desempenho com entradas de tamanhos variados (100k, 200k, 500k elementos), medindo:
+Para validar a análise teórica, foram feitos testes de desempenho com entradas de tamanhos variados (100k, 200k, 500k, 1m, 10m elementos), medindo:
 
 - Inserções no **início**, **meio** e **fim** das listas.
 - Buscas em posições específicas (primeiro, último, meio).
