@@ -26,13 +26,21 @@ A organização dos arquivos foi feita de forma a facilitar a navegação e a ex
 ```text
 trabalhoTPA/
 ├── src/
-│   ├── lista/
+│   ├── implementacao1/
 │   │   ├── ListaEncadeada.java                     # Implementação da lista genérica
 │   │   ├── No.java                                 # Classe nó da lista encadeada
 │   │   └── ComparadorAlunoPorMatricula.java        # Comparators para listas ordenadas
 │   │   └── Aluno.java                              # Classe modelo representando o aluno
 │   │   └── Main.java                               # Programa de teste com inserção, busca e remoção
-└── README.md                                       # Este arquivo
+│   ├── implementacao2/
+│   |   ├── input
+|   |         ├── GeradorArquivosBalanceado
+|   |   ├── src
+|   │   │   ├── LeitorArquivos.java                     # Classe para ler os elementos da lista nos arquivos
+|   │   │   └── TestesArrayListLinkedList.java          # Classe para fazer os testes de inserção e busca de elementos em arquivos  
+|   │   │   └── Aluno.java                              # Classe modelo representando o aluno
+|   │   │   └── Main.java                               # Programa de teste com inserção e busca
+└── README.md                                           # Este arquivo
 ```
 
 ## 📚 Implementação
