@@ -34,7 +34,7 @@ trabalhoTPA/
 │   │   └── Main.java                               # Programa de teste com inserção, busca e remoção
 │   ├── implementacao2/
 │   |   ├── input
-|   |         ├── GeradorArquivosBalanceado
+|   |       ├── GeradorArquivosBalanceado               # Classe para gerar os arquivos que serão utilizados no programa 
 |   |   ├── src
 |   │   │   ├── LeitorArquivos.java                     # Classe para ler os elementos da lista nos arquivos
 |   │   │   └── TestesArrayListLinkedList.java          # Classe para fazer os testes de inserção e busca de elementos em arquivos  
